@@ -1,0 +1,64 @@
+
+img {
+    height: calc(100vh - 76px);
+    width: 100%;
+    margin-bottom: 0; /* Remove any bottom margin */
+}
+
+h1 {
+    text-align: center;
+    background-image: radial-gradient( circle 759px at -6.7% 50%, rgb(4, 174, 241) 0%, rgb(232, 45, 210) 26.2%, rgb(189, 243, 82) 50.6%, rgb(18, 136, 191) 74.1%, rgb(228, 217, 214) 100.3% );
+    padding: 15px;
+    margin-top: -15px; /* Reduce space above the header */
+}
+
+.main {
+    background: url("../../assets/img1.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: rgb(110, 210, 249);
+    width: 78.5vw;
+    height: 90vh;
+    margin-bottom: 0; /* Remove any bottom margin to avoid space */
+}
+
+  
+  
+  
+.product-info {
+    color: white;
+}
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.product-box {
+    color: black;
+    background: rgb(33, 135, 17);
+    height: 200px;
+    width: 250px;
+    transition: margin-top 750ms;
+}
+.product-box:hover,
+.product-box.box:focus {
+    margin-top: 20px;
+  }
+.mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.boxes h5 {
+    margin-top: 13px;
+    font-size: 24px;
+    padding: 21px;
+}
+.product-info h2{
+    
+    text-align: center;
+    color: rgb(44 199 23);
+    padding: 58px;
+    font-size: 48px;
+}

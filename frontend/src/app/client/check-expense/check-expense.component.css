@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .welcome-panel,
+  .form-panel {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    height: calc(100vh - 50px);
+    overflow: auto;
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .welcome-panel {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+h2 {
+    text-align: center;
+    background-image: radial-gradient(
+      circle 759px at -6.7% 50%,
+      rgb(4, 174, 241) 0%,
+      rgb(232, 45, 210) 26.2%,
+      rgb(189, 243, 82) 50.6%,
+      rgb(18, 136, 191) 74.1%,
+      rgb(228, 217, 214) 100.3%
+    );
+    padding: 15px;
+  }
+
+  .table-container {
+    max-height: 300px; /* Adjust this height to fit 5 rows */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: block;
+}
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white; /* White text for consistency */
+    margin-top: 10px;
+  }
+  
+  /* Sticky Table Header */
+  .table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #343a40; /* Dark background for header */
+    color: white;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #454d55;
+  }
+  
+  /* Table Rows and Cells */
+  .table tbody td {
+    background-color: #343a40; /* Uniform table body color */
+    color: white; /* White text */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #454d55; /* Light borders */
+    vertical-align: middle;
+  }
+  
+  /* Optional: Hover effect for rows */
+  .table tbody tr:hover {
+    background-color: #3e464d; /* Slightly lighter shade on hover */
+  }
+  
+  .budget table{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+  }
+  .budget table tr td.red {
+    color: red;
+  }
+  .budget table tr td.green {
+    color: green;
+  }
+  .budget table tr td span{
+    margin-left: 20px;
+    color: white;
+  }
+  .budget table tr td.red span{
+    border: 1px solid red;
+    background: red;
+  }
+
+  .budget table tr td.green span{
+    border: 1px solid green;
+    background: green;
+  }

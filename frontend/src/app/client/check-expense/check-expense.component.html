@@ -1,0 +1,57 @@
+
+<div class="container">
+  <div class="form-panel">
+    <h2>Expense Detail</h2>
+    
+    <!-- Month Picker -->
+    <div>
+      <label>Select Month:</label>
+      <input type="month" [(ngModel)]="date" name="date" (change)="dateChange($event)" class="form-control" />
+    </div>
+    
+    <!-- Budget and Total Expense Display -->
+    <div class="budget">
+      <table border="1" class="table">
+        <tr>
+          <th>Month</th>
+          <th>Budget Limit</th>
+          <th>Total Expense</th>
+        </tr>
+        <tr>
+          <td>{{date | date: 'MMMM yyyy'}}</td> <!-- Display full month and year -->
+          <td class="green">{{budgetLimit | currency: 'INR'}}</td>
+          <td [class.green]="totalExpense <= budgetLimit" [class.red]="totalExpense > budgetLimit">
+            {{totalExpense | currency: 'INR'}}
+            <span class="expence-per">{{((totalExpense/budgetLimit)*100).toFixed(2)}}%</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <!-- Expenses Table -->
+    <div class="table-container">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Expense Name</th>
+            <th>Expense Amount</th>
+            <th>Remarks</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let expense of expenseList">
+            <td>{{ expense?.eid }}</td>
+            <td>{{ expense?.expName }}</td>
+            <td>{{ expense?.expAmount }}</td>
+            <td>{{ expense?.remarks }}</td>
+            <td>{{ expense?.date | date: 'mediumDate' }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="expenseList.length === 0"> No Record Found</div>
+    </div>
+    
+  </div>
+</div>

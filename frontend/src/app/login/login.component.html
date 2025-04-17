@@ -1,0 +1,39 @@
+<div class="outer-container">
+  <div class="login-container">
+    <div class="login-box">
+      <div class="right-panel">
+        <form class="login-form" [formGroup]="loginForm" >
+          <h2>User Login</h2>
+          <span *ngIf="errorMessage !== ''" class="error-message">{{errorMessage}}</span>
+          <div class="form-group">
+            <label for="email" style="color: aliceblue;">Email</label>
+            <input style="border: 20px;" type="text" id="email" class="form-control" formControlName="email" name="email" required>
+            <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)"
+            class="error-message">
+            <div *ngIf="loginForm.controls['email'].errors?.['required']">
+             email should not blank
+          </div>
+          
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="password" style="color: aliceblue;">Password</label>
+            <input style="border: 20px;" type="password" id="Password" class="form-control"  formControlName="password" name="password" required>
+            <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)"
+            class="error-message">
+            <div *ngIf="loginForm.controls['password'].errors?.['required']">
+             Password should not blank
+          </div>
+          <div *ngIf="loginForm.controls['password'].errors?.['minlength']">
+              Password must have 8 characters
+          </div>
+          </div>
+          </div>
+          <button type="submit" class="btn-block submit-button" (click)="onSubmit()" [disabled]="!loginForm.controls['password'].valid || !loginForm.controls['email'].valid">Login</button>
+          <!-- <button class="btn-block submit-button" routerLink="/home">Back</button> -->
+          <p class="text-center mt-3" style="color: aliceblue;">Don't have an account? <a routerLink="/register" class="link-text">Create</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

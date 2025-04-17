@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141623; 
+    color: #ffffff;
+    margin: 0;
+    display: scroll;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    margin: 8%;
+    flex-grow: 1; /* Ensures it fills the remaining space below the navbar */
+  }
+  
+  .dashboard-container {
+    background: linear-gradient(145deg, #1f2234, #292c40);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    width: 100%;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  button {
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #646cff;
+    padding: 10px 15px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #505ed1;
+  }
+  
+  .btn-danger {
+    background-color: #e63946;
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #d32f2f;
+  }
+  
+ /* Table Container with Scroll */
+.table-container {
+  max-height: 300px; /* Adjust this height to fit 5 rows */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: block;
+  background-color: #343a40; /* Same background for scroll area */
+  border: 1px solid #454d55; /* Add border for neatness */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.welcome-panel,
+.form-panel {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  height: calc(100vh - 50px);
+  overflow: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.welcome-panel {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  background-image: radial-gradient(
+    circle 759px at -6.7% 50%,
+    rgb(4, 174, 241) 0%,
+    rgb(232, 45, 210) 26.2%,
+    rgb(189, 243, 82) 50.6%,
+    rgb(18, 136, 191) 74.1%,
+    rgb(228, 217, 214) 100.3%
+  );
+  padding: 15px;
+}
+
+.table-container {
+  max-height: 300px; /* Adjust this height to fit 5 rows */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: block;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white; /* White text for consistency */
+  margin-top: 10px;
+}
+
+/* Sticky Table Header */
+.table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #343a40; /* Dark background for header */
+  color: white;
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #454d55;
+}
+
+/* Table Rows and Cells */
+.table tbody td {
+  background-color: #343a40; /* Uniform table body color */
+  color: white; /* White text */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #454d55; /* Light borders */
+  vertical-align: middle;
+}
+
+/* Optional: Hover effect for rows */
+.table tbody tr:hover {
+  background-color: #3e464d; /* Slightly lighter shade on hover */
+}
+
+.form-panel .select-div {
+  padding: 15px;
+}

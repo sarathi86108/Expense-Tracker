@@ -1,0 +1,88 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  size: px;
+  
+}
+
+.welcome-panel,
+.form-panel {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  height: calc(100vh - 50px);
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.welcome-panel {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-panel img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-panel {
+  width: 80%;
+}
+
+h2 {
+  text-align: center;
+  background-image: radial-gradient(
+    circle 759px at -6.7% 50%,
+    rgb(4, 174, 241) 0%,
+    rgb(232, 45, 210) 26.2%,
+    rgb(189, 243, 82) 50.6%,
+    rgb(18, 136, 191) 74.1%,
+    rgb(157, 243, 251) 100.3%
+  );
+  padding: 15px;
+}
+
+.fa-user-circle {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-check {
+  margin-left: 20px;
+}
+
+/* Styling for the "Create" button */
+.btn-primary.create-btn {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 10px; /* Add some margin between the 
+  "Create" and "Back" buttons */
+}
+
+/* Styling for the "Back" button */
+.btn-secondary.back-btn {
+  background-color: #007bff;
+  color: #fff;
+  margin: 35px;
+}
+
+.btn {
+  margin-top: 15px 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+}

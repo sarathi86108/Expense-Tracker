@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+  background: radial-gradient( circle 759px at -6.7% 50%, rgb(233, 241, 245) 0%, rgb(232, 45, 210) 26.2%, rgb(189, 243, 82) 50.6%, rgb(18, 136, 191) 74.1%, rgb(250, 176, 206) 100.3% );
+  padding: 15px;
+}
+h3 {
+  font-size: 16px;
+    text-align: center;
+}

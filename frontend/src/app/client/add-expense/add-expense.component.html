@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="form-panel">
+      <h2>{{isEdit === true ? 'Edit Expense' : 'Add Expense'}}</h2>
+      <form>
+        <div class="form-group">
+          <label for="expensename">Expense Name:</label>
+          <input type="text" class="form-control" id="expensename" [(ngModel)]="expName" name="expensename" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="expenseamount">Expense Amount:</label>
+          <input type="number" class="form-control" id="expenseamount" [(ngModel)]="expenseAmount" name="expenseamount" required>
+        </div>
+
+        <div class="form-group">
+          <label for="remark">Remark:</label>
+          <input type="text" class="form-control" id="remark" [(ngModel)]="remarks" name="remark" required>
+        </div>
+        <div class="form-group">
+            <label for="expensedate">Date:</label>
+            <input type="date" class="form-control" id="expensedate" [(ngModel)]="date" name="expensedate" required>
+          </div>
+        <button type="submit"  class="submit-button"(click)="onSubmit()">{{isEdit === true ? 'Edit' : 'Add'}}</button>
+  
+      </form>
+    </div>
+  </div>
+  

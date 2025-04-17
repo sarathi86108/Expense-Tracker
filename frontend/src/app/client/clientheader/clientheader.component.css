@@ -1,0 +1,45 @@
+.main
+{
+    background-color: #f1f4e9;
+    align-items: center;
+    color: rgb(204, 97, 58);
+    font-size: 20px;
+    text-decoration-color: rgb(219, 110, 22);
+    font-weight: 500;
+    height: 100%;
+    padding: 0px 10px 0px 10px;
+}
+.main > .selected {
+    background: rgb(160, 214, 192);
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main img {
+    height: 3em;
+    width: 200px;
+}
+.main div
+{
+    cursor: pointer;
+    height: 51px;
+}
+.sign-up{
+    color:blue;
+    cursor: pointer;
+}
+.profile {
+   height: auto !important;
+   text-align: center;
+}
+.profile .mat-icon {
+    height: 64px;
+    width: 64px;
+    font-size: 64px;
+}
+
+.profile .uname {
+    margin-top: 20px;
+}

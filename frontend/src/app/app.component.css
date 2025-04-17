@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 20%;
+    height: 100vh;
+}
+.right {
+    width: 80%;
+    height: 100vh;
+    border-left: 1px solid #428b73;
+}
